@@ -3,9 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Currency Converter</title>
+    <meta
+      name="description"
+      content="Free Online Currency Converter - Convert USD to INR and other currencies with live rates. Simple and fast currency calculator."
+    />
+    <meta
+      name="keywords"
+      content="Currency Converter, USD to INR, Online Currency Calculator, Live Exchange Rates, Currency Conversion"
+    />
+    <meta name="author" content="Vinit Dubey" />
+    <title>Currency Converter - Fast, Accurate & Free Online Tool</title>
     <link rel="stylesheet" href="currencyConverter.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="container">
@@ -13,8 +28,13 @@
       <form>
         <div class="amount">
           <p>Enter Amount</p>
-         <input id="amount" type="number" value="100" placeholder="Enter amount" min="1" />
-
+          <input
+            id="amount"
+            type="number"
+            value="100"
+            placeholder="Enter amount"
+            min="1"
+          />
         </div>
 
         <div class="dropdown">
@@ -25,7 +45,7 @@
               <select name="from"></select>
             </div>
           </div>
-          <i class="fa-solid fa-arrow-right-arrow-left" id = "swap-icon"></i>
+          <i class="fa-solid fa-arrow-right-arrow-left" id="swap-icon"></i>
           <div class="to">
             <p>TO</p>
             <div class="select-container">
@@ -36,10 +56,10 @@
         </div>
 
         <div class="msg">USD = ₹83.25</div>
-        <button id = "btn" type="submit">Get Exchange Rate</button>
+        <button id="btn" type="submit">Get Exchange Rate</button>
       </form>
     </div>
-    <script src = "countryCodes.js"></script>
+    <script src="countryCodes.js"></script>
     <script src="currencyConverter.js"></script>
   </body>
 </html>

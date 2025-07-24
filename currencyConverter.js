@@ -60,9 +60,9 @@ btn.addEventListener("click", async (evt) => {
     let response = await fetch(URL);
     let data = await response.json();
     let rate = data[fromCurr.value.toLowerCase()][toCurr.value.toLowerCase()];
-    let finalValue = (amtValue * rate).toFixed(2); // ✅ Format to 2 decimal places
+    let finalValue = (amtValue * rate).toFixed(2); 
 
-    msg.innerText = `${amtValue} ${fromCurr.value} = ${finalValue} ${toCurr.value}`; // ✅ Space between amount and currency
+    msg.innerText = `${amtValue} ${fromCurr.value} = ${finalValue} ${toCurr.value}`;
     msg.classList.add("flash");
     setTimeout(() => msg.classList.remove("flash"), 300);
   } catch (error) {
